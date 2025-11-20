@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects - Mohamad Alaa edin Portfolio" />
+    <title>Projects | Mohamad Alaa edin</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="alternate icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <span class="logo-text">MA</span>
+          </a>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="skills.html" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link active">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="experience.html" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Projects Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-subtitle">
+          Innovative solutions and creative implementations
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="projects-grid">
+          <!-- EMS Project -->
+          <article
+            class="project-card"
+            id="ems"
+            data-aos="fade-up"
+            data-delay="0"
+          >
+            <div class="project-image">
+              <div class="project-placeholder">
+                <svg
+                  width="100"
+                  height="100"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                >
+                  <rect x="10" y="10" width="80" height="60" rx="4"></rect>
+                  <circle cx="30" cy="30" r="8"></circle>
+                  <rect x="45" y="25" width="35" height="4" rx="2"></rect>
+                  <rect x="45" y="35" width="25" height="4" rx="2"></rect>
+                </svg>
+              </div>
+              <div class="project-overlay">
+                <button class="btn-view-project" data-project="ems">
+                  View Details
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-date">July 2025 – September 2025</div>
+              <h3 class="project-card-title">
+                EMS — Employee Management System
+              </h3>
+              <p class="project-card-description">
+                A hybrid system combining ESP32/ESP32-CAM with fingerprint and
+                face recognition, integrated with a cloud-backed mobile app
+                using Firebase.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">ESP32</span>
+                <span class="tech-tag">ESP32-CAM</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">IoT</span>
+                <span class="tech-tag">Mobile App</span>
+                <span class="tech-tag">Fingerprint Recognition</span>
+                <span class="tech-tag">Face Recognition</span>
+              </div>
+              <button class="btn-read-more" data-project="ems">
+                Read More →
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          ×
+        </button>
+        <div class="modal-body" id="modalBody">
+          <!-- Content will be inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M10 17V3M3 10l7-7 7 7"></path>
+      </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>2025 Mohamad Alaa edine</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>
